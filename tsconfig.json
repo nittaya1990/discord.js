@@ -1,50 +1,50 @@
 {
-  // Mapped from https://www.typescriptlang.org/tsconfig
-  "compilerOptions": {
-    // Type Checking
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    // if true: conflicts with discord-api-types
-    "exactOptionalPropertyTypes": false,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "strict": true,
-    "useUnknownInCatchVariables": true,
+	"$schema": "https://json.schemastore.org/tsconfig.json",
+	// Mapped from https://www.typescriptlang.org/tsconfig
+	"compilerOptions": {
+		// Type Checking
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"exactOptionalPropertyTypes": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": false,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"strict": true,
 
-    // Modules
-    "module": "CommonJS",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
+		// Modules
+		"allowArbitraryExtensions": false,
+		"allowImportingTsExtensions": false,
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"resolveJsonModule": true,
+		"resolvePackageJsonExports": true,
+		"resolvePackageJsonImports": true,
 
-    // Emit
-    "declaration": false,
-    "importHelpers": true,
-    "importsNotUsedAsValues": "error",
-    "inlineSources": false,
-    "newLine": "lf",
-    "noEmitHelpers": true,
-    "outDir": "dist",
-    "preserveConstEnums": true,
-    "removeComments": false,
-    "sourceMap": false,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+		// Emit
+		"declaration": true,
+		"declarationMap": true,
+		"importHelpers": false,
+		"newLine": "lf",
+		"noEmitHelpers": true,
+		"outDir": "dist",
+		"removeComments": false,
+		"sourceMap": true,
 
-    // Language and Environment
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "lib": ["ESNext"],
-    "target": "ES2020",
-    "useDefineForClassFields": true,
+		// Interop Constraints
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": false,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
 
-    // Output Formatting
-    "pretty": false,
-
-    // Completeness
-    "skipLibCheck": false,
-    "skipDefaultLibCheck": true
-  }
+		// Language and Environment
+		"experimentalDecorators": true,
+		"lib": ["ESNext"],
+		"target": "ESNext",
+		"useDefineForClassFields": true
+	},
+	"exclude": ["node_modules"]
 }
